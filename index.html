@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HOME</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- STYLESHEET CSS FILES -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+<style>
+.video-wrap {
+  width: 34.1%;
+  padding: 0;
+}
+.img-wrap {
+  width: 65.9%;
+  padding: 0;
+}
+.videoPlayer {
+	width: 100%;
+}
+.tishi {
+  height: 50px;
+  background: #eb5424;
+  color: #fff;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  padding: 0 10px;
+  transform: translateX(-50%);
+  display: none;
+  line-height: 50px;
+  z-index: 9999;
+  border-radius: 4px;
+}
+.checkbox {
+  cursor: pointer;
+}
+.mask-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: none;
+}
+.mask {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  text-align: left;
+  padding: 50px;
+}
+.myclose {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  line-height: 50px;
+  right: 0;
+  top: 0;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.navbar-default .navbar-nav li .myuserName {
+  display: none;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  <div class="tishi" id="tishi"></div>
+  <div class="mask-wrap" id="maskWrap">
+    <div class="mask">
+      <span class="myclose" id="myclose">X</span>
+        当您申请用户时，表示您已经同意遵守本规章。 欢迎您加入本站点参加交流和讨论，本站点为公共论坛，为维护网上公共秩序和社会稳定，请您自觉遵守以下条款：</br> 
+        一、不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益，不得利用本站制作、复制和传播下列信息： </br> 
+      （一）煽动抗拒、破坏宪法和法律、行政法规实施的；</br> 
+      （二）煽动颠覆国家政权，推翻社会主义制度的；</br> 
+      （三）煽动分裂国家、破坏国家统一的；</br> 
+      （四）煽动民族仇恨、民族歧视，破坏民族团结的；</br> 
+      （五）捏造或者歪曲事实，散布谣言，扰乱社会秩序的；</br> 
+      （六）宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；</br> 
+      （七）公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；</br> 
+      （八）损害国家机关信誉的；</br> 
+      （九）其他违反宪法和法律行政法规的；</br> 
+      （十）进行商业广告行为的。</br> 
+      二、互相尊重，对自己的言论和行为负责。</br> 
+      三、禁止在申请用户时使用相关本站的词汇，或是带有侮辱、毁谤、造谣类的或是有其含义的各种语言进行注册用户，否则我们会将其删除。</br> 
+      四、禁止以任何方式对本站进行各种破坏行为。</br> 
+      五、如果您有违反国家相关法律法规的行为，本站概不负责，您的登录论坛信息均被记录无疑，必要时，我们会向相关的国家管理部门提供此类信息。</br> 
+    </div>
+  </div>
+<!-- preloader section -->
+<!-- <div class="preloader">
+  <div class="sk-spinner sk-spinner-rotating-plane"></div>
+</div> -->
+
+<!-- home section -->
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1 class="wow bounceInDown rotate"></h1>
+        <h2 class="wow bounce">釉 彩</h2>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- navigation section -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> </button>
+      <a href="#" class="navbar-brand">韵文博鉴</a></div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="smoothScroll"onclick="javascript:document.getElementById('home').scrollIntoView()">首页</a></li>
+        <li><a href="#intro" class="smoothScroll" onclick="javascript:document.getElementById('intro').scrollIntoView()">功能游戏介绍</a></li>
+        <li><a href="#work" class="smoothScroll" onclick="javascript:document.getElementById('work').scrollIntoView()">上线游戏——釉彩</a></li>
+        <li><a href="#team" class="smoothScroll" onclick="javascript:document.getElementById('team').scrollIntoView()">其他游戏介绍</a></li>
+        <li><a href="#portfolio" class="smoothScroll" onclick="javascript:document.getElementById('portfolio').scrollIntoView()">游戏特色</a></li>
+       <li><a class="smoothScroll" id="goLogin" onclick="javascript:document.getElementById('contact').scrollIntoView()">注册/登录</a></li>
+       <li><a class="smoothScroll myuserName" id="myuserName">嗨嗨</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- intro section -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
+        <h4>传播&传承中国传统文化</h4>
+        <h2>传统文化系列功能游戏</h2>
+        <hr>
+        <p>利用功能游戏能够学习知识、训练技能、模拟管理等特点发掘中国历史长河中的精湛技艺以及精妙文化。将神秘而复杂的工艺技巧剖析分解，再以功能游戏的形式深度还原。以全新的形式传承和发扬中国的历史文化。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- work section -->
+<section id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 video-wrap">
+		
+		<video
+				src='./video/yc.mp4'
+				preload="auto"
+				x-webkit-airplay="true"
+				playsinline="true"
+				webkit-playsinline="true"
+        x5-video-player-type="h5"
+				class="videoPlayer"
+				controls
+				class="video-player"
+				>
+		</video>
+      </div>
+      <div class="col-md-8 col-sm-8 img-wrap">
+        <div class="col-md-6 col-sm-6 bg-black"> <img src="images/q1.jpg" class="img-responsive">
+         <h4> </h4>
+        </div>
+        <div class="col-md-6 col-sm-6 bg-red"><img src="images/q4.jpg" class="img-responsive">
+          <h4> </h4>
+        </div>
+        <div class="col-md-6 col-sm-6 bg-red"> <img src="images/q2.jpg" class="img-responsive">
+          <h4> </h4>
+        </div>
+        <div class="col-md-6 col-sm-6 bg-black"> <img src="images/q3.jpg" class="img-responsive">
+          <h4> </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- team section -->
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <h2>其他游戏介绍</h2>
+        <hr>
+        <p>利用功能游戏具有跨界性、多元性、以及场景化的特征来开启中国文化研究的大门，完全符合中国文化庞大、多元以及包罗万象等特点，能够更好的解读、分析、传承以及发扬中国传统文化技艺。</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s"><img src="images/team1.jpg" class="img-responsive" alt="team img">
+        <div class="team-des">
+          <h4>太极拳</h4>
+          <h3>VR教练亲身指导</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s"><img src="images/team2.jpg" class="img-responsive" alt="team img">
+        <div class="team-des">
+          <h4>更路簿</h4>
+          <h3>千年航海之光</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s"><img src="images/team3.jpg" class="img-responsive" alt="team img">
+        <div class="team-des">
+          <h4>中国结</h4>
+          <h3>交错编制传统技艺</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- portfolio section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <h2>游戏特色</h2>
+        <hr>
+        <p>釉彩游戏特色：《天工开物》曾书，“共计一坯之力，过手七十二，方克成器，其中细微节目，尚不能尽也。”【釉彩】以古代造瓷工艺为基，深度精研瓷器制造流程，完全还原古代造瓷工艺，解析瓷器历史，让玩家在娱乐的过程中了解瓷器的文化背景。</p>
+      </div>
+      <div class="col-md-12 col-sm-12"></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img4.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img6.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img7.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/portfolio-img8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img8.jpg" alt="portfolio img"></a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 登录注册 -->
+<section id="contact">
+<div class="container">
+     <div class="row">
+	<div class="col-md-6">
+	<div class="heading"><h3>登&nbsp;&nbsp;录</h3></div>
+	<div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="账号 :" id="username" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="密码 :" id="email" required>
+        </div>
+        <div class="checkbox" id="xieyi">注册协议
+         </div>
+        <button class="btn btn-default smoothScroll" name="login" id="login">登录</button>
+      </div>
+				</div>
+				<div class="col-md-6">
+					<div class="heading"><h2>注&nbsp;&nbsp;册</h2></div>
+					<div id="ff2">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="账号:" id="firstname" required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="姓名 :" id="lastname" required>
+						</div>
+						
+						<div class="form-group">
+							<input type="tel" class="form-control" placeholder="身份证号码 :" id="phone" required>
+						</div>
+						
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="密码 :" id="password" required>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="重复密码 :" id="repassword" required>
+						</div>
+						
+						<button class="btn btn-default smoothScroll" id="zhuce">注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</section>
+<!-- google map section -->
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-12 col-sm-12">
+        <h2 class="wow fadeIn" data-wow-delay="0.9s">联系我们</h2>
+        <ul class="social-icon">
+          <li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
+          <li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+          <li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-android wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-phone wow bounceIn" data-wow-delay="0.9s"></a></li>
+        </ul>
+      </div> -->
+      <div class="col-md-12 col-sm-12 copyright">
+        <p> Copyright © 上海韵文博鉴信息科技有限公司 All rights reserved. 沪ICP备18034058号-1 </p>
+<p>电话：021-50504740 地址：中国（上海）自由贸易实验区海趣路36、38号1幢308室</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JAVASCRIPT JS FILES --> 
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script> 
+<script src="js/smoothscroll.js"></script> 
+<script src="js/jquery.sticky.js"></script> 
+<script src="js/jquery.parallax.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>
